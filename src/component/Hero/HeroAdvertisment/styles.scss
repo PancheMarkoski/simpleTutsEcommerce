@@ -1,0 +1,23 @@
+.Hero-advertisment {
+  background-color: #000fa0;
+  width: 100%;
+  height: 18vh;
+  margin-top: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 1050px) {
+    height: 54vh;
+  }
+  p {
+    color: #f9f9fa;
+    font-size: 1.83rem;
+    text-align: center;
+    font-weight: 700;
+    font-family: sans-serif;
+    @media (min-width: 1050px) {
+      font-size: 5.6rem;
+      line-height: 64px;
+    }
+  }
+}

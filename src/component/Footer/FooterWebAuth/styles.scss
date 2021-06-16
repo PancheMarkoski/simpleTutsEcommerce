@@ -1,0 +1,13 @@
+.FooterWebAuth {
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 0;
+  padding: 0px 49px;
+  margin: 1.6rem 0 0;
+  color: #626262;
+  @media (min-width: 730px) {
+    padding: 0;
+    width: 71%;
+    text-align: revert;
+  }
+}

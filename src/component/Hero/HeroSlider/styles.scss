@@ -1,0 +1,11 @@
+.HeroSlider {
+  height: 40vh;
+  background-color: #ebeced;
+  padding-top: 3rem;
+  @media (min-width: 550px) {
+    width: 100%;
+    margin-left: 1.5px;
+  }
+}
+
+//

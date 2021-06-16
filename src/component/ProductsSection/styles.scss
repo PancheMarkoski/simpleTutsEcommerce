@@ -1,0 +1,33 @@
+.Products {
+  padding: 3.5rem 2.2rem 3.5rem 2.2rem;
+  text-align: center;
+  .Products-header {
+    h2 {
+      font-size: 3.2rem;
+      font-family: sans-serif;
+      font-weight: 300;
+      margin: 0 0 0.8rem;
+      line-height: 1.2;
+      color: #212529;
+      letter-spacing: 2px;
+    }
+    a {
+      margin: 1rem 0 0;
+      padding: 0 0 0.7rem;
+      font-size: 1.6rem;
+      color: #3633ff;
+      text-decoration: none;
+      border-bottom: 1px solid #3633ff;
+      font-weight: 500;
+    }
+  }
+
+  .Products-list {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 6rem;
+    @media (min-width: 550px) {
+      grid-template-columns: auto auto auto auto;
+    }
+  }
+}

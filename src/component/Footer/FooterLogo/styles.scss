@@ -1,0 +1,8 @@
+.FooterLogo {
+  margin: 0 auto;
+  display: block;
+  @media (min-width: 730px) {
+    padding-left: 20%;
+    padding-top: 14%;
+  }
+}

@@ -1,0 +1,99 @@
+.SignUp {
+  padding: 5.5rem 2.2rem 3.5rem;
+  .SignUp-title {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 300;
+    font-family: sans-serif;
+    color: #212529;
+    margin: 0 0 0.8rem;
+  }
+  .SignUp-ForgotYourPassword {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    display: block;
+    text-align: center;
+  }
+  .SignUp-CreateAccount {
+    font-size: 1.5rem;
+    display: block;
+    text-align: center;
+    margin-bottom: 5.5rem;
+  }
+  .SignUp-error__box {
+    width: 45%;
+    color: #651818;
+    border: 1px solid #d20000;
+    background-color: #fff8f8;
+    margin: 0 auto;
+    margin-bottom: 2.7rem;
+    padding: 16px 20px;
+    .SignUp-error {
+      margin: 0;
+      padding: 0;
+      .SignUp-error__heading {
+        margin: 0 0 0.8rem;
+        padding: 0 0;
+        font-size: 1.9rem;
+        color: #925454;
+        font-weight: 400;
+      }
+      .SignUp-error__list {
+        margin: 0px 0px 0px 1.8rem;
+        padding: 0;
+        padding-bottom: 1.5rem;
+        font-size: 1.6rem;
+        color: #925454;
+        font-weight: 400;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+.LoginAccount {
+  text-align: center;
+  padding: 3.5rem 0 0;
+  .LoginAccount-MyAccount {
+    margin: 0 0 3.5rem;
+    .LoginAccount-MyAccount__heading {
+      font-size: 4rem;
+      font-weight: 400;
+      letter-spacing: 1px;
+      margin: 0 0 0.8rem;
+    }
+    .LoginAccount-MyAccount__link {
+      font-size: 1.6rem;
+      border-bottom: 1px solid #007bff;
+    }
+  }
+  .LoginAccount-desktop {
+    @media (min-width: "990px") {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 5.5rem;
+    }
+  }
+  .LoginAccount-OrderHistory {
+    .LoginAccount-OrderHistory__heading {
+      font-size: 3.2rem;
+      margin: 0 0 0.8rem;
+      letter-spacing: 1px;
+      font-weight: 400;
+    }
+    .LoginAccount-OrderHistory__paragraph {
+      font-size: 1.5rem;
+      color: #69727b;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .LoginAccount-AccountDetails {
+    .LoginAccount-AccountDetails__heading {
+      font-size: 3.2rem;
+      margin: 0 0 0.8rem;
+      letter-spacing: 1px;
+      font-weight: 400;
+    }
+  }
+}

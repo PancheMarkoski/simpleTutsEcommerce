@@ -1,0 +1,23 @@
+.FooterAdvertisment {
+  @media (min-width: 730px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 35%;
+  }
+  .FooterAdvertisment-title {
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+  }
+  .FooterAdvertisment-images {
+    padding: 1.6rem 0 0;
+    margin: 0 0 1.6rem;
+    display: flex;
+    justify-content: center;
+    svg {
+      width: 4.2rem;
+      height: 2.6rem;
+    }
+  }
+}

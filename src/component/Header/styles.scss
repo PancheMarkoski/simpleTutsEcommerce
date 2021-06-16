@@ -1,0 +1,110 @@
+.HeaderOrderElements {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: solid #dee2e6 0.1rem;
+  @media only screen and (min-width: 750px) {
+    flex-direction: row-reverse;
+  }
+
+  .header {
+    height: 7rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 60%;
+    justify-content: space-between;
+    @media (max-width: 750px) {
+      width: 100%;
+    }
+    .header-leftNav {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media only screen and (min-width: 750px) {
+        justify-content: space-between;
+      }
+      img {
+        max-width: 100%;
+      }
+    }
+    .header-rightNav {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 25rem;
+      padding: 0 1.3rem 0 0;
+      li {
+        text-decoration: none;
+        list-style: none;
+        cursor: pointer;
+        @media only screen and (min-width: 750px) {
+          padding: 0 3rem 0 0;
+        }
+        &:nth-child(1) {
+          display: flex;
+          margin: 0 0.5rem 0 1rem;
+          .header-rightNav-search-icon {
+            width: 2rem;
+            height: 2rem;
+            margin: 0 0 0.2rem;
+            @media only screen and (min-width: 750px) {
+              margin: 0.5rem 0 0.2rem;
+            }
+          }
+          span {
+            font-size: 1.6rem;
+            color: #626262;
+            margin: 0 0 0 0.5rem;
+          }
+        }
+        &:nth-child(2) {
+          padding: 1.1rem;
+          .header-rightNav-user-icon {
+            width: 2.2rem;
+            height: 2.3rem;
+            color: #007bff;
+            &:hover {
+              color: black;
+            }
+          }
+        }
+        &:nth-child(3) {
+          padding: 1.1rem;
+          display: flex;
+          .header-rightNav-cart-icon {
+            width: 2.2rem;
+            height: 2.3rem;
+            color: #007bff;
+          }
+          span {
+            position: absolute;
+            background-color: #557b97;
+            display: block;
+            color: white;
+            top: 1.6rem;
+            right: 6.2rem;
+            font-size: 1.2rem;
+            padding: 0.25rem 0.5rem;
+            border-radius: 50%;
+          }
+        }
+        &:nth-child(4) {
+          padding: 1.1rem;
+          .header-rightNav-menu-icon {
+            width: 2.2rem;
+            height: 2.3rem;
+            color: #4d5155;
+          }
+          @media only screen and (min-width: 750px) {
+            .header-rightNav-menu-icon {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

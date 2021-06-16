@@ -1,0 +1,20 @@
+.Homepage {
+  // transform: translateY(0rem);
+  // transition: all 0.5s;
+  .HeroReviewsHeroSliderFlexBox {
+    @media (min-width: 550px) {
+      display: flex;
+      justify-content: center;
+      margin-bottom: -2.3rem;
+      margin-top: 0.4rem;
+    }
+  }
+}
+
+// .HomepageMobileActive {
+//   @media (min-width: 750px) {
+//     transform: translateY(0rem);
+//   }
+//   transform: translateY(30rem);
+//   transition: all 0.5s;
+// }
