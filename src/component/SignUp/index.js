@@ -8,7 +8,7 @@ import validation from '../Validation'
 
 // Redux
 import {useDispatch} from 'react-redux'
-import { signUpUser } from '../../redux/User/user.action'
+import { signUpUserStart } from '../../redux/User/user.action'
 
 const SignUp = () => {
     const dispatch = useDispatch()
@@ -36,7 +36,7 @@ const SignUp = () => {
     
     useEffect(() => {
         if(Object.keys(error).length === 0 && dataIsCorrect) {
-            dispatch(signUpUser(values.email, values.password, values.firstName, values.lastName))
+            dispatch(signUpUserStart(values.email, values.password, values.firstName, values.lastName))
             // try {
                 //     const { user } = await auth.createUserWithEmailAndPassword(values.email, values.password)
                 //     let firstName = values.firstName

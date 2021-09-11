@@ -4,6 +4,8 @@ import './styles.scss'
 
 // Redux
 import { useSelector } from 'react-redux'
+// Router
+import {Link} from 'react-router-dom'
 
 const mapState = ({header}) => ({
     onMenuBtnClick: header.mobileMenu
@@ -15,8 +17,8 @@ const mapState = ({header}) => ({
                 <Fragment>
                 <Media query="(min-width: 750px)">
                 <ul className="DesktopMenu">
-                    <li className="DesktopMenu__listItem">Men</li>
-                    <li className="DesktopMenu__listItem">Woman</li>
+                    <li className="DesktopMenu__listItem"><Link className="LinkBtn" to='/collections/men'>Men</Link></li>
+                    <li className="DesktopMenu__listItem"><Link className="LinkBtn" to='/collections/woman'>Woman</Link></li>
                     <li className="DesktopMenu__listItem">Blog</li>
                     <li className="DesktopMenu__listItem">About</li>
                     <li className="DesktopMenu__listItem">Contact</li>

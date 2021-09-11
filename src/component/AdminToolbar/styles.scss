@@ -1,0 +1,22 @@
+.adminToolbar {
+  background-color: #000000;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  .adminToolbar-ul {
+    padding: 0;
+    margin: 0;
+    .adminToolbar-li {
+      color: white;
+      list-style: none;
+      .adminToolbar-li__link {
+        color: white;
+        text-decoration: none;
+        font-size: 1.4rem;
+        color: #007bff;
+        padding-right: 1rem;
+      }
+    }
+  }
+}

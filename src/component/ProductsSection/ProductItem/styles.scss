@@ -1,11 +1,21 @@
 .Product-item {
-  width: 70%;
-  margin: 0rem auto;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    cursor: pointer;
+    .Product-img {
+      opacity: 70%;
+    }
+    .Product-title {
+      border-bottom: 1px solid black;
+    }
+  }
+  width: 100%;
   &::not(:nth-child(1), :nth-child(2)) {
     padding-top: 5rem;
   }
   .Product-img {
-    width: 85%;
+    width: 100%;
   }
   .Product-title {
     font-size: 1.6rem;
@@ -16,7 +26,7 @@
     color: #3d4246;
     margin-bottom: 1rem;
     @media (min-width: 550px) {
-      margin-top: 7.5rem;
+      margin-top: 2rem;
     }
   }
   .Product-price {

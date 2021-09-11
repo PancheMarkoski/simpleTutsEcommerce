@@ -1,0 +1,42 @@
+.ProductDetails {
+  display: flex;
+  padding: 5rem 15rem;
+  justify-content: center;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+  }
+  .ProductDetails-left {
+    max-width: 73rem;
+    img {
+      width: 60%;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+  .ProductDetails-right {
+    width: 70%;
+    max-width: 36.2rem;
+    h1 {
+      font-size: 2.2rem;
+      font-weight: bold;
+    }
+    p {
+      font-size: 1.4rem;
+    }
+    .ProductDetails-right__btn {
+      width: 100%;
+      border: none;
+      background-color: #130d97;
+      color: white;
+      font-weight: 700;
+      font-size: 1.6rem;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      text-transform: uppercase;
+    }
+    @media (max-width: 900px) {
+      margin: 0 auto;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+const filterProduct = {
+    ADD_FILTER_COLLECTION_PRODUCT: "ADD_FILTER_COLLECTION_PRODUCT",
+    SET_FILTER_PRODUCT: "SET_FILTER_PRODUCT"
+}
+
+export default filterProduct

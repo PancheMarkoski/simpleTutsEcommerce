@@ -12,13 +12,19 @@ import { GrClose } from 'react-icons/gr';
 import SearchBar from './SearchBar'
 import Menu from './Menu'
 import {Link} from 'react-router-dom'
+
 // Redux
-import { connect, useDispatch } from 'react-redux'
+import { connect, useDispatch, useSelector } from 'react-redux'
 import { setHeaderMobileMenu } from '../../redux/Header/header.action'
+
+const mapState = ({product}) => ({
+    productData: product.products
+})
 
 const Header = () => {
 
     const dispatch = useDispatch()
+    const { productData } = useSelector(mapState)
 
     const [onSearchClass, setOnSearchClass] = useState("")  
     const [onMenuBtnClick, setOnMenuBtnClick] = useState(false)
@@ -48,7 +54,7 @@ const Header = () => {
                     </li>
                     <li>
                         <HiOutlineShoppingCart className="header-rightNav-cart-icon"/>
-                        <span>1</span>
+                        <span>{productData.length}</span>
                     </li>
                     <li>
                         {!onMenuBtnClick ? 

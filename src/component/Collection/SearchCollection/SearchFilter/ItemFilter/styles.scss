@@ -1,0 +1,19 @@
+.ItemFilter {
+  border: 1px solid lightgray;
+  display: inline;
+  padding: 0.6rem;
+  font-size: 1.6rem;
+  color: #808080;
+  cursor: pointer;
+  margin-right: 0.8rem;
+}
+
+.ItemFilter-active {
+  border: 1px solid black;
+  display: inline;
+  padding: 0.6rem;
+  font-size: 1.6rem;
+  color: #626262;
+  cursor: pointer;
+  margin-right: 0.8rem;
+}

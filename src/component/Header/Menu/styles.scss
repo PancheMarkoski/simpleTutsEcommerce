@@ -57,3 +57,12 @@
     display: none;
   }
 }
+.LinkBtn {
+  text-decoration: none;
+  color: black;
+  &:hover {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+  }
+}
